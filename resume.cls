@@ -81,7 +81,7 @@
 % Used to create large resume section
 \newenvironment{rSection}[1]{
   \sectionskip
-  \MakeUppercase{\bf #1}
+  \MakeUppercase{{\bf #1}} % https://github.com/treyhunner/resume/issues/8
   \sectionlineskip
   \hrule
   \begin{list}{}{
