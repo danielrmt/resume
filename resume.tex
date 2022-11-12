@@ -1,60 +1,82 @@
 \documentclass{resume}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[margin=1.5cm]{geometry}
 
-\name{John Q. Public}
-\address{ 4489 Oxford Lane \\ San Antonio, PA 90024  }
-\address{ 555~$\cdot$~356~$\cdot$~7936 \\ jpublic@example.edu }
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\name{Daniel Ribeiro Matos Tibúrcio}
+\address{ +55~(21)~98477~8582 \\
+\href{mailto:danielrmt@gmail.com}{danielrmt@gmail.com} \\
+\href{https://linkedin.com/in/danielrmt}{linkedin.com/in/danielrmt} }
 
 \def\nameskip{\bigskip}
 \def\sectionskip{\medskip}
 
 \begin{document}
 
-  \begin{rSection}{Education}
-    {\bf University of California, Berkeley} \hfill {\em June 2004} \\ 
-    { B.S. in Computer Science \& Engineering } \\
-    { Minor in Linguistics } \smallskip \\
-    { Member of Eta Kappa Nu } \\
-    { Member of Upsilon Pi Epsilon } \\
-    Overall GPA: 5.678
-  \end{rSection}
-  
-  \begin{rSection}{Experience}
-  
-    \begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
-    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-    \item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
-    \item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-    \item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    \item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-    \item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
-    \end{rSubsection}
-  
-    \begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
-    \item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
-    \item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-    \item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-    \item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-    \item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-    \end{rSubsection}
 
-    \begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-    \item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-    \item Maecenas convallis ullamcorper ultricies stylesheets.
-    \item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-    \item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
+% EDUCATION -------------------------------------------------------------------
+  \begin{rSection}{Education}
+
+    {\bf Fundação Getúlio Vargas (FGV)} \hfill { January 2022 - Present} \\ 
+    {\em M.Sc. in Economics } \hfill {\em São Paulo} \\
+    { } \\
+    %
+    {\bf IBMEC/RJ} \hfill { March 2015 - July 2017} \\
+    {\em MBA in Finance } \hfill {\em Rio de Janeiro} \\
+    { } \\
+    %
+    {\bf Universidade Federal de Minas Gerais (UFMG)}
+    \hfill { August 2005 - August 2009} \\
+    {\em B.A. in Economics } \hfill {\em Belo Horizonte} \\
+  \end{rSection}
+  
+  
+% EXPERIENCE ------------------------------------------------------------------
+  \begin{rSection}{Professional Experience}
+
+    \begin{rSubsection}{BR Distribuidora}{October 2010 - March 2020}{Business Analyst}{Rio de Janeiro}
+      \item Experience in the strategic planning, competitive intelligence and
+      financial planning and analysis (FP\&A) departments
+      \item Responsible for the financial and economic forecasts of company's
+      Business Plan, including sales and KPI's like
+      EBITDA, ROCE and EVA for each business unit
+      \item Support of the board of directors decision using simulations of
+      company performance under different macroeconomic and industry scenarios 
+      \item Benchmark of financial performance with competitors by using public
+      financial statements data and industry sales and prices data from ANP
+      \item  Monitoring and reporting of macroeconomic and industry indicators
+      for the management
+      \item  Developed econometric models for forecasting fuel market demand
+      for the short-term using time series methods 
+      and for the long-term using structural models
+      \item Estimation of optimal capital structure (debt-equity)
+      \item  Migrated the fuel price reports based on ANP survey from Excel to
+      Power BI
+      \item  Supported the financial forecast discussions during the company
+      IPO, with frequent meetings with banks and the CFO
     \end{rSubsection}
+    
+    
+    \begin{rSubsection}{CEDEPLAR/UFMG}{2006 - 2008}{Research Intern}{Belo Horizonte}
+      \item Literature review, data wrangling and econometric analysis using
+      Stata, from may data sources like DATASUS and PNAD microdata
+    \end{rSubsection}
+  
   
   \end{rSection}
   
-  \begin{rSection}{Technical Strengths}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-      Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
-      Protocols \& APIs & XML, JSON, SOAP, REST \\
-      Databases & MySQL, PostgreSQL, Microsoft SQL \\
-      Tools & SVN, Vim, Emacs
+
+% SKILLS AND INTERESTS --------------------------------------------------------
+  \begin{rSection}{Interests and Technical Skills}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}} l }
+      Research Interests & Quantitative Macroeconomics, DSGE models,
+      Heterogeneous Agents models \\
+      Computer tools & R, Python, Dynare, \LaTeX, MS Excel, basic Git \\
+      Languages & Native Portuguese, Intermediate English, basic Spanish \\
     \end{tabular}
   \end{rSection}
+  
 
 \end{document}
